@@ -81,6 +81,7 @@ impl Snake {
             return false; // Snake has collided with itself or with a block
         }
 
+
         if new_head == self.food {
             self.has_eaten = true;
             let mut new_food = Position {
